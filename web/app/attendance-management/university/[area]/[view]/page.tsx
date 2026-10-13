@@ -6,6 +6,13 @@ import {
   isUniversityArea
 } from "@/data/universityRoleData";
 
+/*
+  Next.js 16.4:
+  This is a dynamic University route and uses request-time params.
+  Allow this route to render as a blocking dynamic route.
+*/
+export const instant = false;
+
 export default async function UniversityAttendancePage({
   params
 }: {
